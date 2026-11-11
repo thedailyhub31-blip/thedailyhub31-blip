@@ -25,9 +25,17 @@ I specialize in **Systems Programming, AI Infrastructure, and Developer Tooling*
 * 🛡️ **System Security:** Strict path traversal containment, cgroup CPU/memory throttling, ephemeral lifecycle isolation.
 * ⚡ **Engineering Principles:** Clean JSON-RPC framing (strict stdio stream isolation), typed contracts via Zod, and sub-millisecond telemetry indexing.
 
+> **Portfolio Note:** The projects featured below were engineered locally throughout 2026 and published to GitHub as a consolidated open-source suite showcasing production-grade Model Context Protocol (MCP) server implementations.
+
 ---
 
 ## 🚀 Featured Open-Source Projects
+
+| # | Repository | Description |
+| :---: | :--- | :--- |
+| 1 | [`docker-mcp-sandbox`](https://github.com/thedailyhub31-blip/docker-mcp-sandbox) | Ephemeral Container Execution Engine |
+| 2 | [`autonomous-sre-mcp-server`](https://github.com/thedailyhub31-blip/autonomous-sre-mcp-server) | Distributed SRE & Incident Diagnosis Engine |
+| 3 | [`intelligent-db-dba-mcp-server`](https://github.com/thedailyhub31-blip/intelligent-db-dba-mcp-server) | Database DBA & Schema Migration Guardrail MCP Server |
 
 ### 1. [`docker-mcp-sandbox`](https://github.com/thedailyhub31-blip/docker-mcp-sandbox)
 > **Ephemeral Docker Execution Sandbox Engine for AI Agents**
@@ -57,6 +65,22 @@ A distributed observability and automated incident diagnosis server that empower
   * **Automated Post-Mortem Synthesis:** Automatically generates structured SEV-1/SEV-2 diagnostic markdown reports complete with rollback commands (`git revert`, `kubectl rollout undo`).
 
 🔗 **[Explore Repository →](https://github.com/thedailyhub31-blip/autonomous-sre-mcp-server)**
+
+---
+
+### 3. [`intelligent-db-dba-mcp-server`](https://github.com/thedailyhub31-blip/intelligent-db-dba-mcp-server)
+> **Database DBA & Schema Migration Guardrail MCP Server**
+
+A production-grade database administrator MCP server that gives AI coding agents deep database-internals expertise, from query-plan decomposition and index coverage analysis to transactional migration guardrails.
+
+* **Key Architectural Innovations:**
+  * **Query-Plan Decomposition:** Executes `EXPLAIN QUERY PLAN` and flags full table scans, temporary B-tree sorts, correlated subqueries, and missing indexes with actionable recommendations.
+  * **Index Coverage Analysis:** Inspects query predicates and ordering clauses to suggest optimal composite indexes for the SQLite engine.
+  * **Transactional Migration Guardrails:** Runs candidate DDL inside named savepoints and always rolls back, guaranteeing dry-runs never mutate production data.
+  * **DDL Risk Detection:** Statically scans migrations for destructive operations (`DROP`, `NOT NULL`, `TRUNCATE`) and reports severity before execution.
+  * **MCP-Native Diagnostics:** Returns structured Markdown diagnostics over strict JSON-RPC stdio framing with Zod-validated tool contracts.
+
+🔗 **[Explore Repository →](https://github.com/thedailyhub31-blip/intelligent-db-dba-mcp-server)**
 
 ---
 
